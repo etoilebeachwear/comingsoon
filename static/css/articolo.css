@@ -1,0 +1,87 @@
+div.articolo{
+    margin: 3%;
+    width: auto;
+    height: 80%;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+}
+
+div.articolo .foto{
+    width: 50%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+div.articolo .descrizione{
+    margin-left: 20px;
+    width: 100%;
+    position: relative;
+}
+
+div.articolo .descrizione input{
+    border: none;
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 30px;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.4);
+    font-size: 1.7em;
+    padding: 10px;
+}
+
+div.articolo .descrizione .selezione{
+    flex-direction: column;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 0;
+    width: 80%;
+}
+
+div.articolo .descrizione .selezione select{
+    width: 40%;
+    font-size: 1.8em;
+}
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin-bottom: 100px;
+    }
+
+    div.articolo{
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    }
+
+    div.articolo .foto{
+        width: auto;
+        height: 800px;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    div.articolo .descrizione{
+        margin: auto;
+        margin-top: 30px;
+        width: 80%;
+        text-align: center;
+    }
+
+    div.articolo .descrizione .selezione{
+        margin: auto;
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    div.articolo .descrizione .selezione, div.articolo .descrizione .selezione div{
+        flex-direction: column;
+    }
+
+    div.articolo .descrizione .selezione select{
+        width: 100%;
+        margin: 5px;
+    }
+}

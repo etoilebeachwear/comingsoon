@@ -1,0 +1,77 @@
+body{
+    overflow: hidden;
+}
+
+.parallax {
+    animation: fadein ease-in 1s;
+
+    background-image: url("../img/home.png");
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div .title-border{
+    animation: movein ease-out 1.7s;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+div .title-border img{
+    width: auto;
+    height: 35%;
+}
+
+div .title-border .title-footer{
+    opacity: 0;
+    animation: fadein 1s ease-in-out 2s forwards;
+    position: absolute;
+    bottom: 0;
+    margin: 20px;
+}
+
+div .title-border .title-footer h3{
+    text-align: center;
+    color: black;
+}
+
+div .title-border .title-footer .svg-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes movein {
+    0%{
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+    50% {
+        transform: translateY(100px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
